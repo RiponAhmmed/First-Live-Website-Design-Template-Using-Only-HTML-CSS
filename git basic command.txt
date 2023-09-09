@@ -1,0 +1,17 @@
+git config --global user.name "Tipu Sultan"
+
+git config --global user.email "tipusultancse@gmail.com"
+
+নিম্নলিখিত কমান্ডগুলো দিয়ে ফাইল আপলোড করতে হবেঃ 
+git init
+git add .
+git commit -m "write any commit"
+git branch -M main
+git remote add origin https://github.com/RiponAhmed/training-with-live-project-practice.git
+git push -u origin main
+
+
+ফাইল আপডেট করতে চাইলে নিচের কমান্ডগুলো লিখতে হবেঃ
+git add . 
+git commit -m "Write any new commit"
+git push 
