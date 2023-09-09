@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Web Design</title>
+   <script language="javascript" type="text/javascript">
+      function clearText(field){
+          if (field.defaultValue == field.value) field.value = '';
+          else if (field.value == '') field.value = field.defaultValue;
+         }
+   </script>
+      
+   <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen"/>
+   <link rel="stylesheet" href="style.css">
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript">
+   </script>
+   <script src="js/jquery.nivo.slider.js" type="text/javascript"></script>
+   <script type="text/javascript">
+      $(window).load(function() {
+         $('#slider').nivoSlider({
+            effect:'random',
+            slices:10,
+            animSpeed:500,
+            pauseTime:3200,
+            startSlide:0, //Set starting Slide (0 index)
+            directionNav:false,
+            directionNavHide:false, //Only show on hover
+            controlNav:false, //1,2,3...
+            controlNavThumbs:false, //Use thumbnails for Control Nav
+            pauseOnHover:true, //Stop animation while hovering
+            manualAdvance:false, //Force manual transitions
+            captionOpacity:0.8, //Universal caption opacity
+            beforeChange: function(){},
+            afterChange: function(){},
+            slideshowEnd: function(){} //Triggers after all slides have been shown
+         });
+      });
+   </script>
+</head>
+<body>
+
+   <!-------------------------------- Header Starts ---------------------------------------------->
+   <div class="headersection template clear">
+      <div class="logo">
+         <img src="images/logo.jpg" alt="Logo">
+         <h2>Website Title</h2>
+         <p>Our Website Description</p>
+      </div>
+      <div class="social">
+         <a href="#"><img src="images/social/facebook.png" alt="Facebook"></a>
+         <a href="#"><img src="images/social/twitter.png" alt="Twitter"></a>
+         <a href="#"><img src="images/social/instagram.jpeg" alt="Instagram"></a>
+         <a href="#"><img src="images/social/youtube.jpg" alt="youTube"></a>
+         <a href="#"><img src="images/social/linkedin.jpg" alt="LinkedIn"></a>
+         <a href="#"><img src="images/social/Google_Plus.png" alt="Google Plus"></a>
+      </div>
+   </div>
+   <!-------------------------------- Header Ends -------------------------------------------------->
+   
+   <!-------------------------------- Navigation Starts -------------------------------------------->
+   <div class="navsection template clear">
+      <ul>
+         <li><a href="#">Home</a></li>
+         <li><a href="#">About</a></li>
+         <li><a href="#">Privacy</a></li>
+         <li><a href="#">Portfolio</a></li>
+         <li><a href="#">Login</a></li>
+         <li><a href="#">Blog</a></li>
+      </ul>
+   </div>
+   <!-------------------------------- Navigation Ends -------------------------------------------->
+
+   <!-------------------------------- Slider Starts ---------------------------------------------->
+   <div class="slidersection template clear">
+      <div id="slider">
+         <a href="#"><img src="images/slideshow/01.jpg" alt="nature 1" title="Wood Bridge" /></a>
+         <a href="#"><img src="images/slideshow/02.jpg" alt="nature 2" title="Sea" /></a>
+         <a href="#"><img src="images/slideshow/03.jpg" alt="nature 3" title="Field" /></a>
+         <a href="#"><img src="images/slideshow/04.jpg" alt="nature 4" title="Leaf" /></a>
+     </div>
+   </div>
+   <!-------------------------------- Slider Ends -------------------------------------------->
+
+   <!-------------------------------- Content Section Starts --------------------------------->
+   <div class="contentsection template clear">
+      <div class="maincontent clear">
+         <div class="samepost clear">
+            <h2>Our Post Title Here</h2>
+            <img src="images/web.png" alt="post image"/>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur esse perspiciatis quae aperiam soluta non in eaque deet consectetur adipisicing elit. Tenetur esse perspiciatis quae aperiam soluta non in eaque deleniti necessitatibus omni leniti necessitatibus omnis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur esse perspiciatis quae aperiam soluta non in eaque deet consectetur adipisicing elit. Tenetur esse perspiciatis quae aperiam soluta non in eaque deleniti necessitatibus omni leniti necessitatibus necessitatibus omni leniti necessitatibus necessitatibus omni leniti necessitatibus  omnis?</p>
+            
+            <div class="readmore">
+               <a href="#">Read More</a>
+            </div>
+
+         </div>
+      
+         <div class="samepost clear">
+            <h2>Our Post Title Here</h2>
+            <img src="images/web1.png" alt="post image"/>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur esse perspiciatis quae aperiam soluta non in eaque deet consectetur adipisicing elit. Tenetur esse perspiciatis quae aperiam soluta non in eaque deleniti necessitatibus omni leniti necessitatibus omnis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur esse perspiciatis quae aperiam soluta non in eaque deet consectetur adipisicing elit. Tenetur esse perspiciatis quae aperiam soluta non in eaque deleniti necessitatibus omni leniti necessitatibus necessitatibus omni leniti necessitatibus necessitatibus omni leniti necessitatibus  omnis?</p>
+
+            <div class="readmore">
+               <a href="#">Read More</a>
+            </div>
+         </div>
+        
+         <div class="samepost clear">
+            <h2>Our Post Title Here</h2>
+            <img src="images/web2.png" alt="post image"/>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur esse perspiciatis quae aperiam soluta non in eaque deet consectetur adipisicing elit. Tenetur esse perspiciatis quae aperiam soluta non in eaque deleniti necessitatibus omni leniti necessitatibus omnis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur esse perspiciatis quae aperiam soluta non in eaque deet consectetur adipisicing elit. Tenetur esse perspiciatis quae aperiam soluta non in eaque deleniti necessitatibus omni leniti necessitatibus necessitatibus omni leniti necessitatibus necessitatibus omni leniti necessitatibus  omnis?</p>
+
+            <div class="readmore">
+               <a href="#">Read More</a>
+            </div>
+         </div>
+      </div>
+
+      <div class="sidebar clear">
+         <div class="samesidebar">
+            <h2>Recent Articles</h2>
+               <ul>
+                  <li><a href="#">পরিবার নিয়ে মার্কিন দূতাবাসে এমরান, যা বললেন আইনমন্ত্রী</a></li>
+                  <li><a href="#">বিপিএলের যে দলে খেলবেন তামিম শোয়েব মালিক</a></li>
+                  <li><a href="#">আদালতে আত্মসমর্পণ করে জামিন পেলেন মমতাজ</a></li>
+                  <li><a href="#">জি-২০ সম্মেলনের উদ্বোধনী অনুষ্ঠানে প্রধানমন্ত্রী</a></li>
+                  <li><a href="#">সম্পর্ক আরও গভীর করার প্রতিশ্রুতি মোদি-বাইডেনের</a></li>
+                  <li><a href="#">বলিভিয়াকে উড়িয়ে দিল ব্রাজিল</a></li>
+               </ul>
+         </div>
+         <div class="samesidebar">
+            <h2>Bangladesh Affairs</h2>
+            <ul>
+               <li><a href="#">Post Title Bangladesh one will be go here.</a></li>
+               <li><a href="#">Post Title Bangladesh two will be go here.</a></li>
+               <li><a href="#">Post Title Bangladesh three will be go here.</a></li>
+               <li><a href="#">Post Title Bangladesh four will be go here.</a></li>
+               <li><a href="#">Post Title Bangladesh five will be go here.</a></li>
+               <li><a href="#">Post Title Bangladesh six will be go here.</a></li>
+            </ul>
+         </div>
+         <div class="samesidebar">
+            <h2>International Affairs</h2>
+            <ul>
+               <li><a href="#">Post Title International one will be go here.</a></li>
+               <li><a href="#">Post Title International two will be go here.</a></li>
+               <li><a href="#">Post Title International three will be go here.</a></li>
+               <li><a href="#">Post Title International four will be go here.</a></li>
+               <li><a href="#">Post Title International five will be go here.</a></li>
+               <li><a href="#">Post Title International six will be go here.</a></li>
+            </ul>
+         </div>
+      </div>
+        
+   </div>
+   <!-------------------------------- Content Section Ends --------------------------------->
+
+   <!-------------------------------- Footer Section Starts --------------------------------->
+   <div class="footersection template clear">
+     <div class="footermenu clear">
+         <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Blog</a></li>
+         </ul>
+     </div>
+     <p>&copy; Copyright Training With Live Project</p>
+   </div>
+   <!-------------------------------- Footer Section Ends ---------------------------------->
+</body>
+</html>
