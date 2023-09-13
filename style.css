@@ -22,6 +22,40 @@ body{
 }
 
 /* ----------------------- Contact Page Starts ----------------------------------*/
+input[type="text"], input[type="email"] {
+   width: 300px;
+   padding: 5px;
+   margin-bottom: 5px;
+   border: 1px solid #e1c890;
+   border-radius: 2px;
+}
+
+textarea {
+   width: 300px;
+   height: 60px;
+   padding: 5px;
+   margin-bottom: 5px;
+   border: 1px solid #e1c890;
+   border-radius: 2px;
+}
+input[type="submit"] {
+   background: #FAF5E4;
+   border: 1px solid #DDE06D;
+   padding: 3px 10px;
+   font-size: 15px;
+   color: #000;
+   font-family: 'Times New Roman', Times, serif;
+   border-radius: 2px;
+   cursor: pointer;
+}
+
+input[type="submit"]:hover{
+   background: #333456;
+   color: #fff;
+   transition: 0.5s;
+   border-radius: 2px;
+}
+
 
 /* ----------------------- Contact Page Ends ----------------------------------*/
 
@@ -102,7 +136,7 @@ body{
    border-radius: 3px;
 }
 
-.navsection ul li a:hover {
+.navsection ul li a:hover, #active {
    background-color: #6b6b84;
    border-radius: 3px;
    color: #fff;
