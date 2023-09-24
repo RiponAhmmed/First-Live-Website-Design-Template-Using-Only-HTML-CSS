@@ -48,11 +48,12 @@
 	position:absolute;
 	left:0px;
 	bottom:0px;
-	background:#000;
+	background:#807b7b;
 	color:#fff;
-	opacity:0.8; /* Overridden by captionOpacity setting */
+	opacity:0.4; /* Overridden by captionOpacity setting */
 	width:100%;
 	z-index:89;
+	border-radius: 5px;
 }
 .nivo-caption p {
 	padding:5px;

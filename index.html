@@ -2,16 +2,13 @@
 <html lang="en">
 <head>
    <meta charset="UTF-8">
+   <meta name="description" content="Free Web tutorials">
+   <meta name="language" content="English, Bangla">
+   <meta name="author" content="Tipu Sultan">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Web Design</title>
-   <script language="javascript" type="text/javascript">
-      function clearText(field){
-          if (field.defaultValue == field.value) field.value = '';
-          else if (field.value == '') field.value = field.defaultValue;
-         }
-   </script>
-      
    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen"/>
+   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
    <link rel="stylesheet" href="style.css">
    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript">
    </script>
@@ -39,76 +36,100 @@
    </script>
 </head>
 <body>
-   <!-------------------------------- Header Starts ---------------------------------------------->
+   <!----------------------------------- Header Starts ---------------------------------------------------->
    <div class="headersection template clear">
       <div class="logo">
-         <img src="images/logo.jpg" alt="Logo">
+         <a href="index.html"><img src="images/logo.jpg" alt="Logo"></a>
          <h2>Website Title</h2>
          <p>Our Website Description</p>
       </div>
       <div class="social">
-         <a href="#"><img src="images/social/facebook.png" alt="Facebook"></a>
-         <a href="#"><img src="images/social/twitter.png" alt="Twitter"></a>
-         <a href="#"><img src="images/social/instagram.jpeg" alt="Instagram"></a>
-         <a href="#"><img src="images/social/youtube.jpg" alt="youTube"></a>
-         <a href="#"><img src="images/social/linkedin.jpg" alt="LinkedIn"></a>
-         <a href="#"><img src="images/social/Google_Plus.png" alt="Google Plus"></a>
+         <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+         <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+         <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+         <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+         <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+         <a href="https://www.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
       </div>
    </div>
-   <!-------------------------------- Header Ends -------------------------------------------------->
+   <!---------------------------------- Header Ends ------------------------------------------------------->
    
-   <!-------------------------------- Navigation Starts -------------------------------------------->
-   <div class="navsection template clear">
+   <!------------------------------ Navigation and Submenu Starts ----------------------------------------->
+   <div class="navsection template">
       <ul>
-         <li><a id="active" "index.html">Home</a></li>
-         <li><a href="about.html">About</a></li>
-         <li><a href="contact.html">Contact</a></li>
+         <li><a id="active" href="index.html">Home</a></li>
+         <li><a href="about.html">About</a>
+            <ul>
+               <li><a href="#">About One</a></li>
+               <li><a href="#">About Two</a></li>
+               <li><a href="#">About Three</a></li>
+               <li><a href="#">About Four</a></li>
+               <li><a href="#">About Five</a></li>
+            </ul>
+         </li>
+         <li><a href="about.html">Products</a>
+            <ul>
+               <li><a href="#">Product One</a></li>
+               <li><a href="#">Product Two</a></li>
+               <li><a href="#">Product Three</a></li>
+               <li><a href="#">Product Four</a></li>
+               <li><a href="#">Product Five</a></li>
+            </ul>
+         </li>
+         <li><a href="about.html">Privacy</a></li>
+         <li><a href="about.html">DMCA</a></li>
+         <li><a href="contact.html">Contact</a>
+            <ul>
+               <li><a href="#">Address One</a></li>
+               <li><a href="#">Address Two</a></li>
+               <li><a href="#">Address Three</a></li>
+               <li><a href="#">Address Four</a></li>
+               <li><a href="#">Address Five</a></li>
+            </ul>
+         </li>
+         <li><a href="index.html">Grocery</a></li>
+         <li><a href="index.html">Electronics</a></li>
+         <li><a href="index.html">Fashion</a></li>
+         <li><a href="index.html">Mobiles</a></li>
       </ul>
    </div>
-   <!-------------------------------- Navigation Ends -------------------------------------------->
-
-   <!-------------------------------- Slider Starts ---------------------------------------------->
+   <!--------------------------------- Navigation and Submenu Ends ---------------------------------------->
+   
+   <!-------------------------------- Slider Starts ------------------------------------------------------->
    <div class="slidersection template clear">
       <div id="slider">
          <a href="#"><img src="images/slideshow/01.jpg" alt="nature 1" title="Wood Bridge" /></a>
          <a href="#"><img src="images/slideshow/02.jpg" alt="nature 2" title="Sea" /></a>
          <a href="#"><img src="images/slideshow/03.jpg" alt="nature 3" title="Field" /></a>
          <a href="#"><img src="images/slideshow/04.jpg" alt="nature 4" title="Leaf" /></a>
-     </div>
+      </div>
    </div>
-   <!-------------------------------- Slider Ends -------------------------------------------->
-
-   <!-------------------------------- Content Section Starts --------------------------------->
-   <div class="contentsection template clear">
+   <!-------------------------------- Slider Ends --------------------------------------------------------->
+   <!-------------------------------- Content Section Starts ---------------------------------------------->
+   <div class="contentsection contemplate clear">
       <div class="maincontent clear">
          <div class="samepost clear">
             <h2>Our Post Title Here</h2>
-            <img src="images/web.png" alt="post image"/>
+            <a href="#"><img src="images/web.png" alt="post image"/></a>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur esse perspiciatis quae aperiam soluta non in eaque deet consectetur adipisicing elit. Tenetur esse perspiciatis quae aperiam soluta non in eaque deleniti necessitatibus omni leniti necessitatibus omnis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur esse perspiciatis quae aperiam soluta non in eaque deet consectetur adipisicing elit. Tenetur esse perspiciatis quae aperiam soluta non in eaque deleniti necessitatibus omni leniti necessitatibus necessitatibus omni leniti necessitatibus necessitatibus omni leniti necessitatibus  omnis?</p>
-            
             <div class="readmore">
-               <a href="#">Read More</a>
-            </div>
-
-         </div>
-      
-         <div class="samepost clear">
-            <h2>Our Post Title Here</h2>
-            <img src="images/web1.png" alt="post image"/>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur esse perspiciatis quae aperiam soluta non in eaque deet consectetur adipisicing elit. Tenetur esse perspiciatis quae aperiam soluta non in eaque deleniti necessitatibus omni leniti necessitatibus omnis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur esse perspiciatis quae aperiam soluta non in eaque deet consectetur adipisicing elit. Tenetur esse perspiciatis quae aperiam soluta non in eaque deleniti necessitatibus omni leniti necessitatibus necessitatibus omni leniti necessitatibus necessitatibus omni leniti necessitatibus  omnis?</p>
-
-            <div class="readmore">
-               <a href="#">Read More</a>
+               <a href="post.html">Read More</a>
             </div>
          </div>
-        
          <div class="samepost clear">
             <h2>Our Post Title Here</h2>
-            <img src="images/web2.png" alt="post image"/>
+            <a href="#"><img src="images/web1.png" alt="post image"/></a>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur esse perspiciatis quae aperiam soluta non in eaque deet consectetur adipisicing elit. Tenetur esse perspiciatis quae aperiam soluta non in eaque deleniti necessitatibus omni leniti necessitatibus omnis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur esse perspiciatis quae aperiam soluta non in eaque deet consectetur adipisicing elit. Tenetur esse perspiciatis quae aperiam soluta non in eaque deleniti necessitatibus omni leniti necessitatibus necessitatibus omni leniti necessitatibus necessitatibus omni leniti necessitatibus  omnis?</p>
-
             <div class="readmore">
-               <a href="#">Read More</a>
+               <a href="post.html">Read More</a>
+            </div>
+         </div>
+         <div class="samepost clear">
+            <h2>Our Post Title Here</h2>
+            <a href="#"><img src="images/web2.png" alt="post image"/></a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur esse perspiciatis quae aperiam soluta non in eaque deet consectetur adipisicing elit. Tenetur esse perspiciatis quae aperiam soluta non in eaque deleniti necessitatibus omni leniti necessitatibus omnis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur esse perspiciatis quae aperiam soluta non in eaque deet consectetur adipisicing elit. Tenetur esse perspiciatis quae aperiam soluta non in eaque deleniti necessitatibus omni leniti necessitatibus necessitatibus omni leniti necessitatibus necessitatibus omni leniti necessitatibus  omnis?</p>
+            <div class="readmore">
+               <a href="post.html">Read More</a>
             </div>
          </div>
       </div>
@@ -126,35 +147,35 @@
                </ul>
          </div>
          <div class="samesidebar">
-            <h2>Bangladesh Affairs</h2>
-            <ul>
-               <li><a href="#">Post Title Bangladesh one will be go here.</a></li>
-               <li><a href="#">Post Title Bangladesh two will be go here.</a></li>
-               <li><a href="#">Post Title Bangladesh three will be go here.</a></li>
-               <li><a href="#">Post Title Bangladesh four will be go here.</a></li>
-               <li><a href="#">Post Title Bangladesh five will be go here.</a></li>
-               <li><a href="#">Post Title Bangladesh six will be go here.</a></li>
-            </ul>
-         </div>
-         <div class="samesidebar">
-            <h2>International Affairs</h2>
-            <ul>
-               <li><a href="#">Post Title International one will be go here.</a></li>
-               <li><a href="#">Post Title International two will be go here.</a></li>
-               <li><a href="#">Post Title International three will be go here.</a></li>
-               <li><a href="#">Post Title International four will be go here.</a></li>
-               <li><a href="#">Post Title International five will be go here.</a></li>
-               <li><a href="#">Post Title International six will be go here.</a></li>
-            </ul>
+               <h2>Bangladesh Affairs</h2>
+               <div class="populer clear">
+                  <h3><a href="#">Post Title Will go here..</a></h3>
+                  <a href="#"><img src="images/web1.png" alt="post image"/></a>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi sint aliquam aspernatur sit exercitationem? Officiis esse obcaecati distinctio expedita tenetur?</p>
+               </div>
+               <div class="populer clear">
+                  <h3><a href="#">Post Title Will go here..</a></h3>
+                  <a href="#"><img src="images/web1.png" alt="post image"/></a>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi sint aliquam aspernatur sit exercitationem? Officiis esse obcaecati distinctio expedita tenetur?</p>
+               </div>
+               <div class="populer clear">
+                  <h3><a href="#">Post Title Will go here..</a></h3>
+                  <a href="#"><img src="images/web1.png" alt="post image"/></a>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi sint aliquam aspernatur sit exercitationem? Officiis esse obcaecati distinctio expedita tenetur?</p>
+               </div>
+               <div class="populer clear">
+                  <h3><a href="#">Post Title Will go here..</a></h3>
+                  <a href="#"><img src="images/web1.png" alt="post image"/></a>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi sint aliquam aspernatur sit exercitationem? Officiis esse obcaecati distinctio expedita tenetur?</p>
+               </div>
          </div>
       </div>
-        
    </div>
-   <!-------------------------------- Content Section Ends --------------------------------->
+   <!-------------------------------- Content Section Ends ------------------------------------------------>
 
-   <!-------------------------------- Footer Section Starts --------------------------------->
+   <!-------------------------------- Footer Section Starts ----------------------------------------------->
    <div class="footersection template clear">
-     <div class="footermenu clear">
+      <div class="footermenu clear">
          <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -163,9 +184,42 @@
             <li><a href="#">Login</a></li>
             <li><a href="#">Blog</a></li>
          </ul>
-     </div>
-     <p>&copy; Copyright Training With Live Project</p>
+      </div>
+      <p>&copy; Copyright Training With Live Project</p>
    </div>
-   <!-------------------------------- Footer Section Ends ---------------------------------->
+   <!-------------------------------- Footer Section Ends ------------------------------------------------->
+
+   <!-------------------------------- Leftside Social Icons Starts ---------------------------------------->
+   <div class="fixedicon clear">
+      <a href="https://www.facebook.com/" target="_blank"><img src="images/social/facebook.png" alt="Facebook"></a>
+      <a href="https://www.twitter.com/" target="_blank"><img src="images/social/twitter.png" alt="Twitter"></a>
+      <a href="https://www.instagram.com/" target="_blank"><img src="images/social/instagram.jpeg" alt="Instagram"></a>
+      <a href="https://www.youtube.com/" target="_blank"><img src="images/social/youtube.jpg" alt="youTube"></a>
+      <a href="https://www.linkedin.com/" target="_blank"><img src="images/social/linkedin.jpg" alt="LinkedIn"></a>
+      <a href="https://www.google.com/" target="_blank"><img src="images/social/Google_Plus.png" alt="Google Plus"></a>
+   </div>
+   <!-------------------------------- Leftside Social Icons Ends ------------------------------------------>
+
+   <!------------- Google Analytics: change UA-XXXXX-X to be your site's ID. Starts ----------------------->
+   <script> 
+      (function(b,o,i,l,e,r){
+         b.GoogleAnalyticsObject=l;
+         b[l]||(b[l]=function(){
+         (b[l].q=b[l].q||[]).push(arguments)
+         });
+         b[l].l=+new Date;
+         e=o.createElement(i);
+         r=o.getElementsByTagName(i)[0];
+         e.src='https://www.google-analytics.com/analytics.js';
+         r.parentNode.insertBefore(e,r)
+      }
+         (window,document,'script','ga'));
+         ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+   </script> 
+   <!------------- Google Analytics: change UA-XXXXX-X to be your site's ID. Ends ------------------------->
+   
+   <!--------------------------- scroll to top starts  ---------------------------------------------------->
+   <script type="text/javascript" src="js/scrolltotop.js"></script>
+   <!--------------------------- scroll to top ends  ------------------------------------------------------>
 </body>
 </html>

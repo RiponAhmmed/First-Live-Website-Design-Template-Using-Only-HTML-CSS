@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400;500&family=Slabo+27px&display=swap');
+
 *{
    margin: 0;
    padding: 0;
@@ -6,10 +8,11 @@
 }
 
 body{
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: 'Open Sans', sans-serif;
    font-size: 14px;
    line-height: 18px;
    color: #000;
+   background: url(images/bg.png) repeat fixed 0 0 #fff;
 }
 
 .template{
@@ -17,11 +20,163 @@ body{
    margin: 0 auto;
 }
 
+.contemplate{
+   width: 958px;
+   margin: 0 auto;
+}
 .clear{
    overflow: hidden;
 }
 
-/* ----------------------- Contact Page Starts ----------------------------------*/
+/* ----------------------------------- Headsection Starts ------------------------------------------------*/
+.headersection{
+   /* height: 85px; */
+   background: #BC7D1C;
+}
+
+.logo{
+   width: 430px;
+   float: left;
+}
+.logo img {
+   width: 70px;
+   float: left;
+   padding-left: 20px;
+   padding-bottom: 10px;
+   padding-top: 10px;
+   margin-right: 15px;
+   border-radius: 50%;
+}
+.logo h2 {
+   margin-top: 14px;
+   font-size: 24px;
+   margin-bottom: 11px;
+   color: #fff;
+   font-weight: bold;
+   text-shadow: 2px 3px 1px #666;
+}
+.logo p {
+   color: #fff;
+   font-size: 12px;
+   font-weight: bold;
+}
+
+.social {
+   width: 326px;
+   float: right;
+   margin-top: 20px;
+   text-align: right;
+   margin-right: 10px;
+}
+.social a {
+   font-size: 25px;
+   color: #fff;
+   background: #946309;
+   padding: 2px 10px;
+   border-radius: 3px;
+}
+
+.social a:hover{
+   background: #fff;
+   color: #333;
+   transition: 0.5s;
+}
+.social img {
+   width: 48px;
+   margin-top: -13px;
+   padding: 5px;
+   border-radius: 50%;
+}
+.myicon {
+   width: 203px;
+   margin: 0 auto;
+}
+.myicon i {
+   font-size: 180px;
+   border: 1px solid #f2ac25;
+   padding: 0px 28px;
+   color: #a1791e;
+   border-radius: 5px;
+}
+/* --------------------------------- Headsection Ends  ---------------------------------------------------*/
+
+/* --------------------------------- Navsection Starts ---------------------------------------------------*/
+.navsection{
+   background: #e2a74f;
+   color: #fff;
+   min-height: 38px;
+}
+.navsection ul{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+.navsection ul li{
+   display: block;
+   float: left;
+   border-right: 1px solid #807058;
+   border-left: 1px solid #ebe2c2;
+   position: relative;
+}
+
+.navsection ul li:first-child{
+   border-left: 0px solid #807058;
+}
+.navsection ul li:last-child{
+   border-right: 0px solid #ebe2c2;
+}
+.navsection ul li a{
+   display: block;
+   color: #fff;
+   font-size: 20px;
+   font-weight: bold;
+   text-decoration: none;
+   padding: 10px;
+   -webkit-transition: 0.5s;
+   -moz-transition: 0.5s;
+   -o-transition: 0.5s;
+   transition: 0.5s;
+}
+
+.navsection ul li a:hover, #active{
+   background-color: #f7eec7;
+   border-radius: 3px;
+   color: #000;
+   transition: 0.5s;
+}
+
+/* ------------------------- Submenu Starts ------------------------------------*/
+.navsection ul li ul{
+   position: absolute;
+   left: -999999px;
+}
+
+.navsection ul li:hover ul{
+   left: 0px;
+}
+.navsection ul li ul li{
+   background: #e2a74f;
+   color: #000;
+   width: 200px;
+   border-radius: 2px;
+   border-bottom: 1px solid #927140;
+   float: none;
+   border-right: 0px solid #807058;
+   border-left: 0px solid #ebe2c2;
+   z-index: 100;
+}
+
+.navsection ul li ul li:last-child{
+   border-bottom: 0px solid #927140;
+}
+.navsection ul li ul li a{
+   font-size: 18px;
+}
+
+/* ------------------------- Submenu Ends ------------------------------------*/
+
+/* ----------------------------------- Navsection Ends ---------------------------------------------------*/
+/* ------------------------------------- Contact Page Starts ----------------------------------------------*/
 input[type="text"], input[type="email"] {
    width: 300px;
    padding: 5px;
@@ -55,119 +210,53 @@ input[type="submit"]:hover{
    transition: 0.5s;
    border-radius: 2px;
 }
-
-
-/* ----------------------- Contact Page Ends ----------------------------------*/
-
-
-
-.headersection{
-   /* height: 85px; */
-   background: #c8c21d;
-}
-
-.logo{
-   width: 430px;
-   float: left;
-}
-.logo img {
-   width: 70px;
-   float: left;
-   padding-left: 20px;
-   padding-bottom: 10px;
-   padding-top: 10px;
-   margin-right: 15px;
-   border-radius: 50%;
-}
-.logo h2 {
-   margin-top: 14px;
-   font-size: 24px;
-   margin-bottom: 11px;
-   color: #fff;
-   font-weight: bold;
-   text-shadow: 2px 3px 1px #666;
-}
-.logo p {
-   color: #fff;
-   font-size: 12px;
-   font-weight: bold;
-}
-
-.social {
-   float: right;
-   padding-top: 20px;
-   width: 326px;
-}
-.social img {
-   width: 48px;
-   margin-top: -13px;
-   padding: 5px;
-   border-radius: 50%;
-}
-
-/* .headersection h2 {
-   font-size: 48px;
-   text-align: center;
-   padding-top: 30px;
-   color: #fff;
-} */
-.navsection{
-   background: #C8C286;
-}
-
-.navsection ul{
-   margin: 0;
-   padding: 0;
-   list-style: none;
-}
-.navsection ul li{
-   display: block;
-   float: left;
-}
-.navsection ul li a {
-   display: block;
-   text-decoration: none;
-   padding: 5px 20px;
-   margin: 5px;
-   font-size: 16px;
-   color: #000;
-   font-weight: 300;
-   background: #C8C2E1;
-   border-radius: 3px;
-}
-
-.navsection ul li a:hover, #active {
-   background-color: #6b6b84;
-   border-radius: 3px;
-   color: #fff;
-}
-
+/* ----------------------------------- Contact Page Ends -------------------------------------------------*/
+/* ----------------------------------- slidersection Starts ----------------------------------------------*/
 .slidersection {
-   margin-bottom: 15px;
+   margin-bottom: 10px;
    box-shadow: 0px 10px 9px -3px rgb(137, 185, 185);
-   border-radius: 5px;
-   margin-top: 1.5px;
-}
-.contentsection{
-   background: #ffffff;
-   transition: 0.5s;
-}
-.maincontent{
-    width: 670px;
-    background: #FAF5E4;
-    float: left;
-    margin-bottom: 15px;
-    padding: 8px 20px;
-    border: 1px solid #bfbc08;
+   /* border-radius: 5px; */
 }
 
+/* ----------------------------------- slidersection Ends ----------------------------------------------*/
+
+/* ----------------------------------- Contentsection Starts ----------------------------------------------*/
+.contentsection {
+   background: #ffffff;
+   border: 1px solid #CAC121;
+   padding: 15px;
+}
+.maincontent {
+   width: 660px;
+   background: #FAF5E4;
+   float: left;
+   margin-bottom: 15px;
+   padding: 8px 20px;
+   border: 1px solid #f3f1a8;
+}
 .about{}
+.relatedpost{}
+.relatedpost h2 {
+   background: #C8C21D;
+   color: #000 !important;
+   border-bottom: 1px solid #604c05 !important;
+}
+.relatedpost a{}
+.relatedpost a img {
+   width: 196px;
+   height: 130px;
+   margin-bottom: 10px;
+}
+.relatedpost a img:hover{
+   opacity: 0.4;
+}
 .about img {
    float: left;
    width: 220px;
    margin-right: 10px;
    background: #edebec;
    padding: 5px;
+   margin-top: 6px;
    border: 1px solid rgb(28, 208, 112);
    border-radius: 3px;
 }
@@ -196,6 +285,7 @@ input[type="submit"]:hover{
    padding: 5px;
    border: 1px solid rgb(28, 208, 112);
    border-radius: 3px;
+   margin-top: 6px;
 }
 .samepost p {
    font-size: 16px;
@@ -205,8 +295,8 @@ input[type="submit"]:hover{
 }
 
 .readmore{
- float: right;
- margin-top: 10px;
+   float: right;
+   margin-top: 10px;
 }
 .readmore a{
    text-decoration: none;
@@ -223,13 +313,13 @@ input[type="submit"]:hover{
    color: #bb7b7b; 
 } */
 
-.sidebar{
+.sidebar {
    width: 256px;
    background: #FAF5E4;
    float: right;
    margin-bottom: 15px;
    padding: 10px;
-   border: 1px solid #bfbc08;
+   border: 1px solid #f3f1a8;
 }
 .samesidebar {
    margin-bottom: 10px;
@@ -276,6 +366,39 @@ input[type="submit"]:hover{
    text-align: justify;
    line-height: 22px;
 }
+
+.populer{}
+.populer h3 {
+   background: #efe5e5;
+   font-size: 13px;
+   padding: 5px 8px;
+   border-bottom: 1px solid #dddF9F;
+   border-radius: 3px;
+   margin-bottom: 5px;
+   font-weight: bold;
+}
+.populer h3 a{
+   text-decoration: none;
+   color: #444;
+}
+.populer img {
+   width: 75px;
+   height: 50px;
+   float: left;
+   margin-right: 10px;
+   margin-top: 5px;
+   background: #f8f6f6;
+   padding: 5px;
+   border: 1px solid #DE8;
+   border-radius: 3px;
+}
+.populer p{
+   font-size: 14px;
+   text-align: justify;
+}
+
+/* ----------------------------------- Contentsection Ends ----------------------------------------------*/
+
 .footersection{
    height: 85px;
    background: #c8c21d;
@@ -304,12 +427,256 @@ input[type="submit"]:hover{
 }
 .footersection p{}
 
+.fixedicon{
+   position: fixed;
+   left: 0;
+   top: 140px;
+   width: 60px;
+}
+.fixedicon img{
+   width: 48px;
+   border-radius: 50%;
+}
 
+/* ----------------------------------------Item Sections Example Starts ---------------------------------- */
+.myicon p{
+   font-size: 16px;
+   line-height: 22px;
+   margin-bottom: 10px;
+   text-align: justify;
+}
+.items{
+   width: 400px;
+   height: 250px;
+   margin: 0 auto;
+   position: relative;
+   overflow: hidden;
+   border-radius: 4px;
+}
+.items img {
+   width: 400px;
+   height: 250px;
+   border-radius: 4px;
+}
 
-/* .footersection p{
-   font-size: 30px;
-   font-weight: bold;
-   text-align: center;
-   padding-top: 30px;
+.shadow{
+   width: 100%;  /* width and height can be given width: 400px; height: 250px;*/
+   height: 100%;
+   background: rgba(0, 0, 0, 0.6);
+   border-radius: 4px;
+   position: absolute;
+   top: -100%;
+   transition: 0.6s;
+}
+
+.context{
+   width: 280px;
+   margin: 90px auto;
+   padding: 10px;
+   border: 1px solid #f1ebeb;
+   border-radius: 3px;
    color: #fff;
-} */
+}
+.context h2{
+   text-align: center;
+}
+.context p {
+   font-style: italic;
+   margin-top: 10px;
+   text-align: center;
+   font-size: 12px;
+   color: #c78787;
+   font-weight: bold;
+}
+
+.items:hover .shadow{
+   top: 0;
+}
+
+/* Second Example Practice */
+.sec_item{
+   width: 400px;
+   height: 250px;
+   margin: 0 auto;
+   position: relative;
+   overflow: hidden;
+   border-radius: 4px;
+}
+.sec_item img{
+   width: 400px;
+   height: 250px;
+   border-radius: 4px;
+}
+.sec_shadow{
+   width: 400px;
+   height: 250px;
+   background: rgba(0, 0, 0, 0.6);
+   position: absolute;
+   top: -100%;
+   transition: 0.5s;
+   border-radius: 4px;
+}
+
+.sec_item:hover .sec_shadow{
+   top: 0;
+}
+
+.sec_context {
+   width: 280px;
+   border: 1px solid blue;
+   padding: 10px;
+   margin: 0 auto;
+   margin-top: 72px;
+   color: #fff;
+   text-align: center;
+   border-radius: 4px;
+}
+
+.sec_context h2{
+   margin-bottom: 10px;
+}
+.sec_context p{
+   text-align: center;
+}
+/* ----------------------------------------Item Sections Example Ends ------------------------------------ */
+
+/* ----------------------------------------Item_2 Sections Example Startd ------------------------------------ */
+
+/*---- CSS3 Properties ----*/
+.photo{
+   width: 300px;
+   height: 190px;
+   margin: 100px auto;
+}
+.photo img{
+   width: 300px;
+   height: 190px;
+   transition: 2s;
+}
+
+.photo:hover img{
+   /* transform: rotate(360deg); */
+   /* transform: scale(1.5); */
+   /* transform: skew(36deg); */
+   transform: translate(200px);
+}
+
+/* ----------------------------------------Item_2 Sections Example Ends ------------------------------------ */
+
+/* ---------------------------------------- Google Map Starts ---------------------------------------------*/
+.googlemap{}
+#map{
+   width: 100%;
+   height: 300px;
+}
+/* ---------------------------------------- Google Map Ends ---------------------------------------------- */
+
+.mycounter{
+   font-size: 70px;
+   background: #9d6b13;
+   padding: 55px 30px;
+   color: rgb(114, 213, 119);
+   text-align: center;
+   border-radius: 4px;
+}
+
+/* ------------------------------ Sort and Filter Starts -------------------------------------------------------- */
+.sorting{
+   text-align: center;
+}
+.sorting h2{
+   margin-top: 10px;
+}
+
+/* ---- button ---- */
+.button {
+   display: inline-block;
+   padding: 0.5em 1.0em;
+   background: #EEE;
+   border: none;
+   border-radius: 7px;
+   background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );
+   color: #222;
+   font-family: sans-serif;
+   font-size: 16px;
+   text-shadow: 0 1px white;
+   cursor: pointer;
+}
+
+.button:hover {
+   background-color: #8CF;
+   text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
+   color: #222;
+}
+
+.button:active,
+.button.is-checked {
+   background-color: #28F;
+}
+
+.button.is-checked {
+   color: white;
+   text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
+}
+
+.button:active {
+   box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+}
+
+/* ---- button-group ---- */
+
+.button-group {
+   margin-bottom: 10px;
+   margin-top: 15px;
+   margin-left: 70px;
+}
+
+.button-group:after {
+   content: '';
+   display: block;
+   clear: both;
+}
+
+.button-group .button {
+   float: left;
+   border-radius: 0;
+   margin-left: 0;
+   margin-right: 1px;
+}
+
+.button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
+.button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
+
+/* ---- isotope ---- */
+
+.grid {
+   text-align: center;
+}
+
+/* clear fix */
+.grid:after {
+   content: '';
+   display: block;
+   clear: both;
+}
+
+/* ---- .element-item ---- */
+
+.element-item {
+   position: relative;
+   float: left;
+   margin: 5px;
+   padding: 5px;
+   color: #262524;
+   width: 174px;
+}
+
+.element-item img {
+   width: 100%;
+   border-radius: 4px;
+   border: 4px solid #ddd;
+   padding: 6px;
+   margin-left: 35px;
+}
+
+/* ------------------------------ Sort and Filter Ends -------------------------------------------------------- */
